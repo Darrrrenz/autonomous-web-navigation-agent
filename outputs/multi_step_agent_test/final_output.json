@@ -1,0 +1,20 @@
+{
+  "task": "Find the GitHub repository microsoft/playwright, open its Releases section, and extract the latest release information as JSON.",
+  "status": "partial",
+  "result": {
+    "repository": "microsoft/playwright",
+    "latest_release": {
+      "version": "v1.60.0",
+      "title": "v1.60.0",
+      "author": "yury-s",
+      "publish_date": null,
+      "release_notes": "HAR recording added as a first-class tracing API with tracing.startHar()/stopHar(); new locator.drop() for simulating external drag-and-drop; aria snapshot improvements including page-level assertions and bounding boxes; new test.abort() for aborting a running test; additional APIs and improvements across browser/context/page events, locators/assertions, network, errors/reporting, test runner, HTML reporter, and Trace Viewer. Breaking changes include removal of long-deprecated APIs such as Locator.ariaRef(), exposeBinding handle option, logger option on connect/connectOverCDP, and videosPath/videoSize context options. Browser versions: Chromium 148.0.7778.96, Firefox 150.0.2, WebKit 26.4; also tested against Chrome 147 and Edge 147.",
+      "download_links": []
+    }
+  },
+  "limitations": [
+    "Publish date was not visible in the extracted page content.",
+    "Download asset names and URLs were not visible; only that the release had 2 assets.",
+    "Release notes were summarized from visible content rather than captured verbatim."
+  ]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "step": 8,
+    "source": "visible_page_text",
+    "extracted_data": {
+      "content": "Latest release for microsoft/playwright is v1.60.0 by yury-s. The page shows key highlights, browser versions, and indicates 2 downloadable assets, but asset URLs and an explicit publish date are not visible in the provided page text.",
+      "data": {
+        "repository": "microsoft/playwright",
+        "latest_release": {
+          "version": "v1.60.0",
+          "title": "v1.60.0",
+          "author": "yury-s",
+          "publish_date": null,
+          "release_notes": "Highlights: HAR recording added as a first-class tracing API with tracing.startHar()/stopHar(); new locator.drop() for simulating external drag-and-drop; aria snapshot improvements including page-level assertions and bounding boxes; new test.abort() for aborting a running test; additional APIs and improvements across browser/context/page events, locators/assertions, network, errors/reporting, test runner, HTML reporter, and Trace Viewer. Breaking changes include removal of long-deprecated APIs such as Locator.ariaRef(), exposeBinding handle option, logger option on connect/connectOverCDP, and videosPath/videoSize context options. Browser versions: Chromium 148.0.7778.96, Firefox 150.0.2, WebKit 26.4; also tested against Chrome 147 and Edge 147.",
+          "download_links": [],
+          "assets_count": 2
+        }
+      },
+      "notes": [
+        "Publish date is not visible in the provided page text.",
+        "Download asset names and URLs are not visible; only 'Assets 2' is shown.",
+        "Release notes on the page are long, so they were summarized.",
+        "Some lower-page text appears truncated after older release content and is not relevant to the latest release extraction."
+      ]
+    }
+  },
+  {
+    "step": 14,
+    "source": "visible_page_text",
+    "error": "extraction_failed",
+    "error_message": "Extractor returned invalid JSON. Error: Expecting ',' delimiter: line 1 column 1125 (char 1124).",
+    "extracted_data": {
+      "content": "Extraction failed.",
+      "data": {},
+      "notes": [
+        "The extractor failed to return valid structured data."
+      ]
+    }
+  },
+  {
+    "step": 15,
+    "source": "visible_page_text",
+    "error": "extraction_failed",
+    "error_message": "Extractor returned invalid JSON. Error: Expecting ',' delimiter: line 1 column 1343 (char 1342).",
+    "extracted_data": {
+      "content": "Extraction failed.",
+      "data": {},
+      "notes": [
+        "The extractor failed to return valid structured data."
+      ]
+    }
+  }
+]

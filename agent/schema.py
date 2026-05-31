@@ -20,8 +20,10 @@ class BrowserAction(BaseModel):
     type: ActionType
     reason: Optional[str] = None
     # click
-    x: Optional[int] = None
-    y: Optional[int] = None
+    x1: Optional[int] = None
+    y1: Optional[int] = None
+    x2: Optional[int] = None
+    y2: Optional[int] = None
     # type
     text: Optional[str] = None
     # press
@@ -37,8 +39,11 @@ class BrowserAction(BaseModel):
     @model_validator(mode="after")
     def validate_required_fields(self):
         if self.type == "click":
-            if self.x is None or self.y is None:
-                raise ValueError("click action requires both x and y.")
+            if (self.x1 is None or self.y1 is None or self.x2 is None or self.y2 is None):
+                raise ValueError("click action requires x1, y1, x2, and y2.")
+
+            if self.x2 <= self.x1 or self.y2 <= self.y1:
+                raise ValueError("click bbox must satisfy x1 < x2 and y1 < y2.")
 
         elif self.type == "type":
             if not self.text:

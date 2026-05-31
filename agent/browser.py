@@ -1,6 +1,8 @@
 from pathlib import Path
 from playwright.async_api import async_playwright, Browser, Page, Playwright
 
+from agent.schema import BrowserAction
+
 
 DEFAULT_VIEWPORT = {"width": 1440, "height": 900}
 
@@ -35,6 +37,38 @@ async def take_screenshot(page: Page, output_path: str | Path) -> str:
 
 async def get_visible_text(page: Page) -> str:
     return await page.locator("body").inner_text()
+
+
+async def execute_action(page: Page, action: BrowserAction) -> None:
+    if action.type == "click":
+        click_x = int((action.x1 + action.x2) / 2)
+        click_y = int((action.y1 + action.y2) / 2)
+        await page.mouse.click(click_x, click_y)
+
+    elif action.type == "type":
+        await page.keyboard.type(action.text)
+
+    elif action.type == "press":
+        await page.keyboard.press(action.key)
+
+    elif action.type == "scroll":
+        amount = action.amount or 600
+        dy = -amount if action.direction == "up" else amount
+        await page.mouse.wheel(0, dy)
+
+    elif action.type == "wait":
+        await page.wait_for_timeout(action.ms or 1000)
+
+    elif action.type == "back":
+        await page.go_back()
+
+    elif action.type == "goto":
+        await page.goto(action.url)
+
+    else:
+        raise ValueError(f"Action '{action.type}' is not an executable action.")
+
+    await wait_for_page_ready(page)
 
 
 async def close_browser(playwright: Playwright, browser: Browser) -> None:

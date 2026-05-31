@@ -21,7 +21,7 @@ def load_model_config() -> ModelConfig:
     return ModelConfig(
         model=os.getenv("MODEL_NAME", "gpt-4o"),
         api_key=os.getenv("OPENAI_API_KEY"),
-        base_url=os.getenv("OPENAI_BASE_URL") or None,
+        base_url=os.getenv("BASE_URL") or None,
         temperature=float(os.getenv("MODEL_TEMPERATURE", "0")),
         max_tokens=int(max_tokens_raw) if max_tokens_raw else None,
         timeout=int(os.getenv("MODEL_TIMEOUT", "30")),

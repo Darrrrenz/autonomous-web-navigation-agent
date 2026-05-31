@@ -1,7 +1,6 @@
 import base64
 from pathlib import Path
 from typing import Any
-
 from openai import OpenAI
 
 from agent.models.config import ModelConfig, load_model_config
@@ -37,6 +36,23 @@ class OpenAIModelClient(ModelClient):
             request_args["max_tokens"] = self.config.max_tokens
 
         return request_args
+    
+    def _create_completion(self, messages):
+        try:
+            response = self.client.chat.completions.create(
+                **self._build_request_args(messages)
+            )
+        except Exception as e:
+            raise RuntimeError(
+                f"OpenAI API request failed. Original error: {e}"
+            ) from e
+
+        content = response.choices[0].message.content
+
+        if content is None:
+            raise ValueError("OpenAI response content is empty.")
+
+        return content
 
     def decide_action(self, prompt: str, screenshot_path: Path) -> str:
         image_b64 = self._encode_image(screenshot_path)
@@ -63,16 +79,8 @@ class OpenAIModelClient(ModelClient):
                 ],
             },
         ]
-        response = self.client.chat.completions.create(
-            **self._build_request_args(messages)
-        )
-        content = response.choices[0].message.content
-
-        if content is None:
-            raise ValueError("OpenAI response content is empty.")
-
-        return content
-
+        return self._create_completion(messages)
+    
     def extract_json(self, prompt: str) -> str:
         messages = [
             {
@@ -86,12 +94,4 @@ class OpenAIModelClient(ModelClient):
                 "content": prompt,
             },
         ]
-        response = self.client.chat.completions.create(
-            **self._build_request_args(messages)
-        )
-        content = response.choices[0].message.content
-
-        if content is None:
-            raise ValueError("OpenAI response content is empty.")
-
-        return content
+        return self._create_completion(messages)
