@@ -1,0 +1,4 @@
+playwright
+openai
+pydantic
+python-dotenv
