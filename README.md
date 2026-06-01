@@ -1,6 +1,6 @@
 # Autonomous Web Navigation Agent
 
-A command-line tool that uses a vision-capable model and Playwright to navigate GitHub and extract structured release information.
+A command-line tool that uses a vision-capable model and Playwright to navigate GitHub and extract structured release information. A sample output is provided under: `outputs\run_20260531_210337\sample_output.json`
 
 The default task starts from `https://github.com`, searches for `openclaw/openclaw`, opens the repository's Releases section, extracts useful release information, and writes a final JSON result.
 
