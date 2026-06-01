@@ -174,4 +174,4 @@ outputs/sample_submission/screenshots/
 
 ## Notes
 
-More details about design decisions, trade-offs, limitations, and future improvements are documented in `observations.md`.
+More details about design decisions, trade-offs, limitations, and future improvements are documented in `observations.pdf`.
