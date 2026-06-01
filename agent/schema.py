@@ -6,7 +6,6 @@ ActionType = Literal[
     "click",
     "type",
     "press",
-    "goto",
     "scroll",
     "wait",
     "back",
@@ -28,8 +27,6 @@ class BrowserAction(BaseModel):
     text: Optional[str] = None
     # press
     key: Optional[str] = None
-    # goto
-    url: Optional[str] = None
     # scroll
     direction: Optional[Literal["up", "down"]] = None
     amount: Optional[int] = None
@@ -52,10 +49,6 @@ class BrowserAction(BaseModel):
         elif self.type == "press":
             if not self.key:
                 raise ValueError("press action requires key.")
-
-        elif self.type == "goto":
-            if not self.url:
-                raise ValueError("goto action requires url.")
 
         elif self.type == "scroll":
             if self.direction not in ("up", "down"):

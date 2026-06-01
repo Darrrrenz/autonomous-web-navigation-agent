@@ -1,0 +1,73 @@
+{
+  "task": "Find the latest GitHub release for openclaw/openclaw and extract its release information.",
+  "status": "partial",
+  "result": {
+    "repository": "openclaw/openclaw",
+    "latest_release": {
+      "version": "v2026.5.28",
+      "title": "openclaw 2026.5.28",
+      "author": "github-actions",
+      "publish_date": null,
+      "commit": "e932160",
+      "release_notes": {
+        "highlights": [
+          "Improves Agent and Codex runtime recovery, including workspace separation, hook context isolation, lock cleanup, and resilience around app-server/helper failures.",
+          "Strengthens channel delivery and session identity across plugin hooks, Matrix, iMessage, Slack, Discord, WhatsApp, Telegram, Microsoft Teams, and other messaging integrations.",
+          "Refreshes mobile and chat surfaces, including iOS Pro UI, hosted push relay, realtime Talk playback, Gateway chat transport, onboarding, permissions, reconnects, and session picker behavior.",
+          "Hardens browser, channel, automation, CLI, auth, config parsing, network, and input validation paths.",
+          "Expands provider, media, and document support, including Claude Opus 4.8, Fal Krea image schemas, NVIDIA featured models, MiniMax streaming music, encrypted PDF extraction, voice catalogs, GitHub Copilot agent runtime, and Codex Supervisor plugin support.",
+          "Improves plugin and Gateway performance through reduced repeated work and better caching.",
+          "Improves release, QA, CI, E2E, and cross-OS validation reliability by bounding logs, artifacts, harnesses, and waits."
+        ],
+        "contributors": "vincentkoc, nxmxbbd, and 43 other contributors"
+      },
+      "download_links": [
+        {
+          "name": "npm package",
+          "url": "https://www.npmjs.com/package/openclaw/v/2026.5.28"
+        },
+        {
+          "name": "registry tarball",
+          "url": "https://registry.npmjs.org/openclaw/-/openclaw-2026.5.28.tgz",
+          "integrity": "sha512-p7jGN9wzCrqEvHNI6Y7+eh6DWoYDzJ1iQGKTm8xqQ2uQ9/2mY1CCf87WoZeb0+m3eHKSGchlI3tN33fE1lMtEA=="
+        },
+        {
+          "name": "macOS zip",
+          "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.zip",
+          "sha256": "5e67be6126dbc2145cc5ad5dc87a992c54dcfd53778538f2a6161c50220bc6b8",
+          "size": "52.2 MB"
+        },
+        {
+          "name": "macOS dmg",
+          "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dmg",
+          "sha256": "e11f93f313d8b2fffdce71676722e9d6ae742ff6aa9ce9a8bbc93c98a22c6a28",
+          "size": "38.7 MB"
+        },
+        {
+          "name": "macOS dSYM",
+          "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dSYM.zip",
+          "sha256": "5d6e3d9139c4d23f864ea55d5c4b49b95e9e304c8075646e76b72d6ca7fc78b4",
+          "size": "36.8 MB"
+        },
+        {
+          "name": "dependency evidence",
+          "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/openclaw-2026.5.28-dependency-evidence.zip",
+          "sha256": "7d39ecf04a6962f3bca86f3686e38e24aa719bec9d7921f45eb4188859be6dc6",
+          "size": "59 KB"
+        },
+        {
+          "name": "source code zip",
+          "url": "https://github.com/openclaw/openclaw/archive/refs/tags/v2026.5.28.zip"
+        },
+        {
+          "name": "source code tar.gz",
+          "url": "https://github.com/openclaw/openclaw/archive/refs/tags/v2026.5.28.tar.gz"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "The exact publish date was not visible in the extracted page text, so publish_date is null.",
+    "Release notes are summarized rather than copied in full."
+  ]
+}

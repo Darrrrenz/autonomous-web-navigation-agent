@@ -1,5 +1,6 @@
 import asyncio
 import json
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 from pydantic import ValidationError
@@ -20,7 +21,8 @@ from agent.vlm_agent import decide_next_action
 
 
 def make_output_dir() -> Path:
-    output_dir = Path("outputs/multi_step_agent_test")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_dir = Path("outputs") / f"run_{timestamp}"
     output_dir.mkdir(parents=True, exist_ok=True)
     return output_dir
 

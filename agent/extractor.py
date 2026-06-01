@@ -15,7 +15,7 @@ def build_extraction_prompt(
     {user_task}
 
     Visible page text:
-    {visible_text[:10000]}
+    {visible_text}
 
     Return valid JSON only. Do not include markdown fences.
     Extract only useful information from this page for the user task.

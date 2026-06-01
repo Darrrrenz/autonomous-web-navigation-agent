@@ -25,6 +25,7 @@ def build_navigation_prompt(
     - Return valid JSON only.
     - Do not include markdown fences.
     - Do not include explanations outside JSON.
+    - Do not construct or directly navigate to GitHub URLs. Use visible browser interactions such as click, type, press, scroll, wait, and back.
 
     Coordinate rules:
     - Use pixel coordinates from the current screenshot. The size should be 1440x900.
@@ -58,13 +59,12 @@ def build_navigation_prompt(
     1. click: requires x1, y1, x2, y2 as a bounding box around the visible clickable target. The program will click the center of the box.
     2. type: requires text
     3. press: requires key
-    4. goto: requires url
-    5. scroll: requires direction ("up" or "down") and amount
-    6. wait: requires ms
-    7. back: requires no extra parameters
-    8. extract: use when the current page has release information worth extracting
-    9. done: use only if the task is completed
-    10. fail: use only if no reasonable next action is possible
+    4. scroll: requires direction ("up" or "down") and amount
+    5. wait: requires ms
+    6. back: requires no extra parameters
+    7. extract: use when the current page has information useful for the user task
+    8. done: use only if the task is completed
+    9. fail: use only if no reasonable next action is possible
 
     Return JSON using exactly this schema:
     {{
@@ -79,7 +79,6 @@ def build_navigation_prompt(
         "y2": 0,
         "text": null,
         "key": null,
-        "url": null,
         "direction": null,
         "amount": null,
         "ms": null

@@ -62,9 +62,6 @@ async def execute_action(page: Page, action: BrowserAction) -> None:
     elif action.type == "back":
         await page.go_back()
 
-    elif action.type == "goto":
-        await page.goto(action.url)
-
     else:
         raise ValueError(f"Action '{action.type}' is not an executable action.")
 

@@ -1,0 +1,805 @@
+{
+  "task": "\n    Go to GitHub.\n    Find the repository openclaw/openclaw.\n    Open its Releases section.\n    Extract the latest release information as JSON.\n\n    The final answer should include:\n    - repository\n    - latest release version or title\n    - author\n    - publish date\n    - release notes\n    - download links\n    ",
+  "start_url": "https://github.com",
+  "repo": "openclaw/openclaw",
+  "max_steps": 20,
+  "max_model_failures": 3,
+  "navigation_steps": 15,
+  "model_failures": 0,
+  "final_status": "success",
+  "final_reason": "Model reported task completed.",
+  "final_screenshot": "outputs\\run_20260531_210337\\screenshots\\final.png",
+  "history": [
+    {
+      "step": 1,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_001.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "click",
+        "reason": "Click the GitHub search field to search for the repository.",
+        "x1": 910,
+        "y1": 20,
+        "x2": 1229,
+        "y2": 53
+      },
+      "expected_result": "The search field should become focused and ready for typing.",
+      "confidence": 0.95
+    },
+    {
+      "step": 2,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_002.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "type",
+        "reason": "Type the repository name into the focused GitHub search field.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "text": "openclaw/openclaw"
+      },
+      "expected_result": "The search field should contain the repository name openclaw/openclaw.",
+      "confidence": 0.98
+    },
+    {
+      "step": 3,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_003.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "press",
+        "reason": "Submit the repository search query.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "key": "Enter"
+      },
+      "expected_result": "GitHub should show search results for openclaw/openclaw or navigate toward the repository.",
+      "confidence": 0.95
+    },
+    {
+      "step": 4,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_004.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "click",
+        "reason": "Open the top search result for the openclaw/openclaw repository.",
+        "x1": 367,
+        "y1": 153,
+        "x2": 510,
+        "y2": 173
+      },
+      "expected_result": "The openclaw/openclaw repository page should open.",
+      "confidence": 0.98
+    },
+    {
+      "step": 5,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_005.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "click",
+        "reason": "Open the latest visible release from the repository Releases section.",
+        "x1": 1071,
+        "y1": 800,
+        "x2": 1201,
+        "y2": 820
+      },
+      "expected_result": "The latest release details page should open, showing the release title, author, date, notes, and download assets.",
+      "confidence": 0.95
+    },
+    {
+      "step": 6,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_006.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "extract",
+        "reason": "Extract visible latest release information including title, author, publish date, and release notes.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0
+      },
+      "expected_result": "The visible release details should be extracted; if download links or full notes are missing, continue navigating.",
+      "confidence": 0.95
+    },
+    {
+      "step": 7,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_007.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "scroll",
+        "reason": "Scroll down the release page to view more release notes and the Assets/download links section.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "direction": "down",
+        "amount": 650
+      },
+      "expected_result": "More of the release notes and possibly the Assets section with download links should become visible.",
+      "confidence": 0.93
+    },
+    {
+      "step": 8,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_008.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "scroll",
+        "reason": "Continue down the release notes toward the Assets section to capture all download links.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "direction": "down",
+        "amount": 700
+      },
+      "expected_result": "Lower parts of the release notes and possibly the Assets/download links section should become visible.",
+      "confidence": 0.92
+    },
+    {
+      "step": 9,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_009.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "scroll",
+        "reason": "Continue scrolling down through the release notes toward the Assets/download links section.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "direction": "down",
+        "amount": 900
+      },
+      "expected_result": "More lower release notes and eventually the Assets section with all download links should become visible.",
+      "confidence": 0.94
+    },
+    {
+      "step": 10,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_010.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "scroll",
+        "reason": "Continue scrolling to the bottom of the release notes to reach the Assets section and full download links.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "direction": "down",
+        "amount": 900
+      },
+      "expected_result": "The Assets section with download files and possibly remaining release metadata should become visible.",
+      "confidence": 0.92
+    },
+    {
+      "step": 11,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_011.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "extract",
+        "reason": "Extract the visible release verification and download links for the latest release.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0
+      },
+      "expected_result": "The visible download links and verification details should be captured for the final JSON.",
+      "confidence": 0.96
+    },
+    {
+      "step": 12,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_012.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "scroll",
+        "reason": "Scroll back up to the release header where GitHub usually shows the author and publish date.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "direction": "up",
+        "amount": 2500
+      },
+      "expected_result": "The top of the latest release page should become visible, including the release title, author, and publish date if shown.",
+      "confidence": 0.88
+    },
+    {
+      "step": 13,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_013.png",
+      "previous_action_success": false,
+      "error_explanation": "The page scrolled upward, but the release header with the author and publish date is not yet visible; the screenshot still shows the middle of the release notes.",
+      "action": {
+        "type": "scroll",
+        "reason": "Continue scrolling up to reach the release header where the publish date is shown.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "direction": "up",
+        "amount": 1800
+      },
+      "expected_result": "The release header area should become visible, including the release title, author, and publish date.",
+      "confidence": 0.9
+    },
+    {
+      "step": 14,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_014.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "extract",
+        "reason": "Extract the visible release header information including title, author, tag, commit, and relative publish date.",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0
+      },
+      "expected_result": "The release header metadata should be captured, including author github-actions and the visible publish date text 'released this yesterday'.",
+      "confidence": 0.96
+    },
+    {
+      "step": 15,
+      "screenshot": "outputs\\run_20260531_210337\\screenshots\\step_015.png",
+      "previous_action_success": true,
+      "error_explanation": "",
+      "action": {
+        "type": "done",
+        "reason": "Task completed. Final extracted JSON: {\"repository\":\"openclaw/openclaw\",\"latest_release_version_or_title\":\"openclaw 2026.5.28\",\"version\":\"v2026.5.28\",\"author\":\"github-actions\",\"publish_date\":\"released yesterday (relative date shown on GitHub)\",\"release_notes\":{\"highlights\":[\"Agent and Codex runtime recovery is steadier, including better workspace separation, hook context handling, timeout lock cleanup, and app-server/helper failure isolation.\",\"Channel delivery and session identity are safer across plugin hooks, Matrix, iMessage, Slack, Discord, WhatsApp, Telegram, and Microsoft Teams.\",\"Mobile and chat surfaces were refreshed, including iOS Pro UI, hosted push relay defaults, realtime Talk playback, Gateway chat transport, onboarding, permissions, WebChat reconnect delivery, and session picker behavior.\",\"Browser, channel, and automation inputs are stricter, rejecting malformed values earlier and preserving delivery context.\",\"Provider, media, and document coverage expanded with Claude Opus 4.8, Fal Krea image schemas, NVIDIA featured models, MiniMax streaming music, encrypted PDF extraction, voice model catalogs, GitHub Copilot agent runtime support, and a Codex Supervisor plugin path.\",\"CLI, auth, doctor, and provider paths now fail faster and recover more clearly.\",\"Plugin and Gateway hot paths reduce repeated work while preserving cache correctness.\",\"Release, QA, and E2E validation now bound more logs, artifacts, harnesses, and cross-OS waits to avoid hangs and false positives.\"],\"contributors\":\"vincentkoc, nxmxbbd, and 43 other contributors\"},\"download_links\":[{\"name\":\"npm package\",\"url\":\"https://www.npmjs.com/package/openclaw/v/2026.5.28\"},{\"name\":\"registry tarball\",\"url\":\"https://registry.npmjs.org/openclaw/-/openclaw-2026.5.28.tgz\",\"integrity\":\"sha512-p7jGN9wzCrqEvHNI6Y7+eh6DWoYDzJ1iQGKTm8xqQ2uQ9/2mY1CCf87WoZeb0+m3eHKSGchlI3tN33fE1lMtEA==\"},{\"name\":\"macOS zip\",\"url\":\"https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.zip\",\"sha256\":\"5e67be6126dbc2145cc5ad5dc87a992c54dcfd53778538f2a6161c50220bc6b8\",\"size\":\"52.2 MB\"},{\"name\":\"macOS dmg\",\"url\":\"https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dmg\",\"sha256\":\"e11f93f313d8b2fffdce71676722e9d6ae742ff6aa9ce9a8bbc93c98a22c6a28\",\"size\":\"38.7 MB\"},{\"name\":\"macOS dSYM\",\"url\":\"https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dSYM.zip\",\"sha256\":\"5d6e3d9139c4d23f864ea55d5c4b49b95e9e304c8075646e76b72d6ca7fc78b4\",\"size\":\"36.8 MB\"},{\"name\":\"dependency evidence\",\"url\":\"https://github.com/openclaw/openclaw/releases/download/v2026.5.28/openclaw-2026.5.28-dependency-evidence.zip\",\"sha256\":\"7d39ecf04a6962f3bca86f3686e38e24aa719bec9d7921f45eb4188859be6dc6\",\"size\":\"59 KB\"},{\"name\":\"source code zip\",\"url\":\"https://github.com/openclaw/openclaw/archive/refs/tags/v2026.5.28.zip\"},{\"name\":\"source code tar.gz\",\"url\":\"https://github.com/openclaw/openclaw/archive/refs/tags/v2026.5.28.tar.gz\"}]}",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0
+      },
+      "expected_result": "The task is complete with the latest release information extracted as JSON.",
+      "confidence": 0.93
+    }
+  ],
+  "extraction_history": [
+    {
+      "step": 6,
+      "source": "visible_page_text",
+      "extracted_data": {
+        "content": "Latest GitHub release for openclaw/openclaw is openclaw 2026.5.28, authored by github-actions. The visible page does not show the exact publish date.",
+        "data": {
+          "repository": "openclaw/openclaw",
+          "latest_release": {
+            "version": "v2026.5.28",
+            "title": "openclaw 2026.5.28",
+            "is_latest": true,
+            "author": "github-actions",
+            "publish_date": null,
+            "commit": "e932160",
+            "commits_since_release": 1433,
+            "release_notes": {
+              "summary": [
+                "Improves Agent and Codex runtime recovery, including workspace separation, hook context isolation, lock cleanup, and resilience around app-server/helper failures.",
+                "Strengthens channel delivery and session identity across plugin hooks, Matrix, iMessage, Slack, Discord, WhatsApp, Telegram, and Microsoft Teams.",
+                "Refreshes mobile and chat surfaces including iOS Pro UI, hosted push relay, realtime Talk playback, Gateway chat transport, onboarding, permissions, WebChat reconnects, and session picker behavior.",
+                "Hardens browser, channel, automation, CLI, auth, config parsing, network, and input validation paths.",
+                "Adds or expands provider/media/document support, including Claude Opus 4.8, Fal Krea image schemas, NVIDIA featured models, MiniMax streaming music, encrypted PDF extraction, voice catalogs, GitHub Copilot agent runtime, and Codex Supervisor plugin support.",
+                "Improves plugin and Gateway performance through reduced repeated work and better caching.",
+                "Bounds release, QA, CI, E2E, and cross-OS validation logs and waits to reduce hangs and false positives."
+              ],
+              "sections": {
+                "highlights": [
+                  "Steadier Agent and Codex runtime recovery.",
+                  "Safer channel delivery and session identity.",
+                  "Broader mobile and chat refresh.",
+                  "Stricter browser, channel, and automation inputs.",
+                  "Expanded provider, media, and document coverage.",
+                  "Clearer CLI, auth, doctor, and provider failures and recovery.",
+                  "Plugin and Gateway hot paths optimized.",
+                  "Release, QA, and E2E validation improved."
+                ],
+                "changes": [
+                  "Status output now shows active subagent details.",
+                  "Default Diffs language pack split and language coverage expanded.",
+                  "ClawHub adds plugin display names, skill verification, and trust surfaces.",
+                  "iOS dev app refreshed with Pro Command, Chat, Agents, Settings, hosted push relay defaults, and realtime Talk.",
+                  "Documentation expanded for Codex setup, auth, macOS gateway troubleshooting, install cards, CLI setup, Notte cloud browser CDP, and backports.",
+                  "PDF extraction moved to ClawPDF with encrypted PDF support.",
+                  "Providers added for Claude Opus 4.8, Fal Krea image models, NVIDIA featured catalogs, MiniMax streaming music, and voice model catalogs.",
+                  "GitHub Copilot agent runtime and Codex Supervisor plugin package added.",
+                  "GitHub Copilot and Tokenjuice externalized as official install-on-demand plugins.",
+                  "Workboard adds agent coordination tools.",
+                  "Discord progress drafts now show commentary.",
+                  "Plugin SDK adds reply payload sending hook.",
+                  "Policy conformance checks expanded."
+                ],
+                "fixes": [
+                  "Agent deletion fallback for offline installs.",
+                  "Authorization policy hardening for phone-control mutation and directive persistence.",
+                  "Large set of Agent/Codex stability and recovery fixes.",
+                  "Channel fixes across Matrix, Slack, iMessage, Telegram, WhatsApp, Discord, Signal, Zalo, and Teams.",
+                  "CLI/auth/doctor/provider validation, timeout, migration, and restart guidance fixes.",
+                  "Gateway and session-state cleanup, token expiry, dedupe, and transcript scan bounds.",
+                  "Strict parsing and validation for config, network, media, cron, sandbox, schema, Telegram, and Teams inputs.",
+                  "Browser/input hardening around tabs, viewports, ports, geolocation, screenshots, cookies, and timeouts.",
+                  "Cron retry behavior improved for transient model rate limits.",
+                  "Provider and agent streaming/signature/reasoning compatibility fixes.",
+                  "Performance improvements in install caches, JSON parsing, tool search, session storage, plugin metadata, and startup.",
+                  "Docker, release, QA, and CI reliability fixes."
+                ],
+                "contributors": "vincentkoc, nxmxbbd, and 43 other contributors"
+              }
+            },
+            "download_links": [
+              {
+                "label": "npm package",
+                "url": "https://www.npmjs.com/package/openclaw/v/2026.5.28"
+              },
+              {
+                "label": "registry tarball",
+                "url": "https://registry.npmjs.org/openclaw/-/openclaw-2026.5.28.tgz"
+              },
+              {
+                "label": "macOS zip",
+                "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.zip"
+              },
+              {
+                "label": "macOS dmg",
+                "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dmg"
+              },
+              {
+                "label": "macOS dSYM",
+                "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dSYM.zip"
+              }
+            ],
+            "verification_links": [
+              {
+                "label": "npm preflight",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26692293231"
+              },
+              {
+                "label": "full release validation",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26692292739"
+              },
+              {
+                "label": "release checks",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26692419552"
+              },
+              {
+                "label": "npm Telegram package E2E",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26692496669"
+              },
+              {
+                "label": "plugin npm publish",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26693306143"
+              },
+              {
+                "label": "plugin ClawHub publish",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26693807853"
+              },
+              {
+                "label": "OpenClaw npm publish",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26693561375"
+              },
+              {
+                "label": "macOS preflight/sign/notarize",
+                "url": "https://github.com/openclaw/releases/actions/runs/26694473893"
+              },
+              {
+                "label": "macOS validation",
+                "url": "https://github.com/openclaw/releases/actions/runs/26695381614"
+              },
+              {
+                "label": "macOS publish/appcast",
+                "url": "https://github.com/openclaw/releases/actions/runs/26695523506"
+              },
+              {
+                "label": "appcast",
+                "url": "https://raw.githubusercontent.com/openclaw/openclaw/main/appcast.xml"
+              }
+            ],
+            "integrity": "sha512-p7jGN9wzCrqEvHNI6Y7+eh6DWoYDzJ1iQGKTm8xqQ2uQ9/2mY1CCf87WoZeb0+m3eHKSGchlI3tN33fE1lMtEA=="
+          }
+        },
+        "notes": [
+          "The exact publish date is not visible in the provided page text.",
+          "The Assets section indicates 6 assets, but only three asset download URLs are visible in the provided text.",
+          "Release notes were summarized rather than copied in full."
+        ]
+      }
+    },
+    {
+      "step": 11,
+      "source": "visible_page_text",
+      "extracted_data": {
+        "content": "Latest release found for openclaw/openclaw: openclaw 2026.5.28 (tag v2026.5.28), authored by github-actions. The release focuses on runtime/session recovery, safer channel delivery, mobile/chat refreshes, stricter inputs, expanded provider/media support, CLI/auth reliability, plugin/Gateway performance, and release/QA validation improvements.",
+        "data": {
+          "repository": "openclaw/openclaw",
+          "latest_release": {
+            "version": "v2026.5.28",
+            "title": "openclaw 2026.5.28",
+            "is_latest": true,
+            "author": "github-actions",
+            "publish_date": null,
+            "commit": "e932160",
+            "commits_since_release": 1433
+          },
+          "release_notes": {
+            "highlights": [
+              "Agent and Codex runtime recovery is steadier, including better workspace separation, prompt-local hook context, session lock cleanup, and shared runtime resilience.",
+              "Channel delivery and session identity are safer across plugin hooks, Matrix, iMessage, Slack, Discord, WhatsApp, Telegram, and Microsoft Teams.",
+              "Mobile and chat surfaces were refreshed, including iOS Pro UI, hosted push relay defaults, realtime Talk playback, Gateway chat transport, onboarding, permissions, reconnect delivery, and session picker behavior.",
+              "Browser, channel, and automation inputs now reject malformed values earlier and preserve delivery context more reliably.",
+              "Provider, media, and document support expanded with Claude Opus 4.8, Fal Krea image schemas, NVIDIA featured models, MiniMax streaming music, encrypted PDF extraction, voice catalogs, GitHub Copilot agent runtime, and Codex Supervisor plugin support.",
+              "CLI, auth, doctor, and provider paths now fail faster and recover more clearly.",
+              "Plugin and Gateway performance improved through reduced repeated work and better cache correctness.",
+              "Release, QA, and E2E validation now bound logs, artifacts, harnesses, and cross-OS waits to avoid hangs and false positives."
+            ],
+            "changes_summary": [
+              "Added active subagent details in status output.",
+              "Expanded default Diffs language coverage.",
+              "Added ClawHub plugin display names, skill verification, and trust surfaces.",
+              "Updated iOS dev app with Pro Command, Chat, Agents, Settings, hosted push relay defaults, and realtime Talk integration.",
+              "Improved documentation for Codex setup, auth, macOS gateway sleep troubleshooting, containers, deployment cards, CLI setup, and browser CDP setup.",
+              "Added ClawPDF-based PDF extraction, encrypted PDF extraction, and structured MCP tool results.",
+              "Added Claude Opus 4.8, Fal Krea image schemas, NVIDIA model catalogs, MiniMax streaming music, and provider-backed voice model catalogs.",
+              "Added GitHub Copilot agent runtime and Codex Supervisor plugin package.",
+              "Externalized GitHub Copilot and Tokenjuice as official install-on-demand plugins.",
+              "Added Workboard tools for coordinating active agent work.",
+              "Improved Discord progress drafts and plugin SDK reply hooks.",
+              "Added policy comparison and conformance checks."
+            ],
+            "fixes_summary": [
+              "Improved agent deletion behavior for offline installs.",
+              "Hardened phone-control mutation and directive persistence authorization policies.",
+              "Fixed numerous Agents/Codex runtime issues around workspace separation, session locks, event queues, streaming, compaction, app-server state, hooks, watchdog recovery, and model/runtime resolution.",
+              "Improved channel handling for outbound hooks, Matrix room IDs, Slack final replies, iMessage polling, Telegram config, WhatsApp profile auth roots, Discord warnings, Teams URL trust, and request timeouts.",
+              "Hardened CLI, auth, doctor, and provider handling for malformed options, credentials, OAuth/token/model requests, auth probes, model migration, local services, and restart guidance.",
+              "Improved Gateway/session state cleanup, browser token expiry, idempotency, rate-limit fallback handling, chat stream buffers, and plugin-state eviction.",
+              "Tightened config parsing, network validation, browser input validation, cron retry behavior, auto-reply metadata handling, media/image handling, file transfers, performance caches, Docker/release/QA behavior, and CI release verification."
+            ],
+            "contributors": [
+              "vincentkoc",
+              "nxmxbbd",
+              "43 other contributors"
+            ]
+          },
+          "download_links": [
+            {
+              "name": "npm package",
+              "url": "https://www.npmjs.com/package/openclaw/v/2026.5.28"
+            },
+            {
+              "name": "registry tarball",
+              "url": "https://registry.npmjs.org/openclaw/-/openclaw-2026.5.28.tgz",
+              "integrity": "sha512-p7jGN9wzCrqEvHNI6Y7+eh6DWoYDzJ1iQGKTm8xqQ2uQ9/2mY1CCf87WoZeb0+m3eHKSGchlI3tN33fE1lMtEA=="
+            },
+            {
+              "name": "macOS zip",
+              "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.zip",
+              "sha256": "5e67be6126dbc2145cc5ad5dc87a992c54dcfd53778538f2a6161c50220bc6b8",
+              "size": "52.2 MB"
+            },
+            {
+              "name": "macOS dmg",
+              "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dmg",
+              "sha256": "e11f93f313d8b2fffdce71676722e9d6ae742ff6aa9ce9a8bbc93c98a22c6a28",
+              "size": "38.7 MB"
+            },
+            {
+              "name": "macOS dSYM",
+              "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dSYM.zip",
+              "sha256": "5d6e3d9139c4d23f864ea55d5c4b49b95e9e304c8075646e76b72d6ca7fc78b4",
+              "size": "36.8 MB"
+            },
+            {
+              "name": "dependency evidence asset",
+              "file": "openclaw-2026.5.28-dependency-evidence.zip",
+              "sha256": "7d39ecf04a6962f3bca86f3686e38e24aa719bec9d7921f45eb4188859be6dc6",
+              "size": "59 KB"
+            },
+            {
+              "name": "Source code zip",
+              "file": "Source code (zip)"
+            },
+            {
+              "name": "Source code tar.gz",
+              "file": "Source code (tar.gz)"
+            }
+          ],
+          "release_verification_links": [
+            {
+              "name": "npm preflight",
+              "url": "https://github.com/openclaw/openclaw/actions/runs/26692293231"
+            },
+            {
+              "name": "full release validation",
+              "url": "https://github.com/openclaw/openclaw/actions/runs/26692292739"
+            },
+            {
+              "name": "release checks",
+              "url": "https://github.com/openclaw/openclaw/actions/runs/26692419552"
+            },
+            {
+              "name": "npm Telegram package E2E",
+              "url": "https://github.com/openclaw/openclaw/actions/runs/26692496669"
+            },
+            {
+              "name": "plugin npm publish",
+              "url": "https://github.com/openclaw/openclaw/actions/runs/26693306143"
+            },
+            {
+              "name": "plugin ClawHub publish",
+              "url": "https://github.com/openclaw/openclaw/actions/runs/26693807853"
+            },
+            {
+              "name": "OpenClaw npm publish",
+              "url": "https://github.com/openclaw/openclaw/actions/runs/26693561375"
+            },
+            {
+              "name": "macOS preflight/sign/notarize",
+              "url": "https://github.com/openclaw/releases/actions/runs/26694473893"
+            },
+            {
+              "name": "macOS validation",
+              "url": "https://github.com/openclaw/releases/actions/runs/26695381614"
+            },
+            {
+              "name": "macOS publish/appcast",
+              "url": "https://github.com/openclaw/releases/actions/runs/26695523506"
+            },
+            {
+              "name": "appcast",
+              "url": "https://raw.githubusercontent.com/openclaw/openclaw/main/appcast.xml"
+            }
+          ],
+          "assets_count": 6,
+          "reactions": {
+            "thumbs_up": 20,
+            "heart": 7,
+            "rocket": 6,
+            "total_people_reacted": 25
+          }
+        },
+        "notes": [
+          "The exact publish date was not visible in the provided page text; only the author and release/version were visible.",
+          "The dependency evidence asset and source code asset URLs were not explicitly visible, so only their file names and visible metadata are included.",
+          "Release notes were summarized to avoid copying the full long page text."
+        ]
+      }
+    },
+    {
+      "step": 14,
+      "source": "visible_page_text",
+      "extracted_data": {
+        "content": "Latest release for openclaw/openclaw is openclaw 2026.5.28 (tag v2026.5.28), published by github-actions. Release notes focus on runtime recovery, safer channel delivery, mobile/chat updates, stricter inputs, expanded provider/media/document support, CLI/auth reliability, plugin performance, and release/QA validation improvements.",
+        "data": {
+          "repository": "openclaw/openclaw",
+          "latest_release": {
+            "version": "v2026.5.28",
+            "title": "openclaw 2026.5.28",
+            "is_latest": true,
+            "author": "github-actions",
+            "publish_date": null,
+            "commit": "e932160",
+            "release_notes": {
+              "highlights": [
+                "Agent and Codex runtime recovery is steadier, including better workspace separation, hook context handling, timeout lock cleanup, and app-server/helper failure isolation.",
+                "Channel delivery and session identity are safer across plugin hooks, Matrix, iMessage, Slack, Discord, WhatsApp, Telegram, and Microsoft Teams.",
+                "Mobile and chat surfaces were refreshed, including iOS Pro UI, hosted push relay defaults, realtime Talk playback, Gateway chat transport, onboarding, permissions, WebChat reconnect delivery, and session picker behavior.",
+                "Browser, channel, and automation inputs are stricter, rejecting malformed values earlier and preserving delivery context.",
+                "Provider, media, and document coverage expanded with Claude Opus 4.8, Fal Krea image schemas, NVIDIA featured models, MiniMax streaming music, encrypted PDF extraction, voice model catalogs, GitHub Copilot agent runtime support, and a Codex Supervisor plugin path.",
+                "CLI, auth, doctor, and provider paths now fail faster and recover more clearly.",
+                "Plugin and Gateway hot paths reduce repeated work while preserving cache correctness.",
+                "Release, QA, and E2E validation now bound more logs, artifacts, harnesses, and cross-OS waits to avoid hangs and false positives."
+              ],
+              "changes_summary": [
+                "Added active subagent status details.",
+                "Expanded default Diffs language coverage.",
+                "Added ClawHub plugin display names, skill verification, and trust surfaces.",
+                "Refreshed iOS development app with Pro Command, Chat, Agents, Settings, push relay defaults, and realtime Talk playback.",
+                "Updated documentation for Codex setup, auth, gateway troubleshooting, deployment, and related workflows.",
+                "Improved PDF extraction, including encrypted PDFs, and surfaced MCP structured content in agent tool results.",
+                "Added new provider/model support and catalogs.",
+                "Added GitHub Copilot agent runtime and Codex Supervisor plugin package.",
+                "Externalized GitHub Copilot and Tokenjuice as official install-on-demand plugins.",
+                "Added Workboard agent coordination tools.",
+                "Improved Discord progress drafts, plugin SDK reply hooks, and policy conformance checks."
+              ],
+              "fixes_summary": [
+                "Improved agent and Codex reliability, session handling, runtime cleanup, hook relay recovery, compaction behavior, and dynamic tool reporting.",
+                "Fixed multiple channel delivery and identity issues across Slack, Discord, Telegram, WhatsApp, Matrix, iMessage, Teams, Signal, Zalo, and others.",
+                "Hardened CLI/auth/doctor/provider validation and timeout behavior.",
+                "Improved Gateway and session state cleanup, browser token expiration, deduping, retry handling, and transcript/media bounds.",
+                "Tightened parsing and network validation for numeric inputs, retry headers, IPv6 no_proxy, config paths, schema refs, Telegram callbacks, Teams attachments, and more.",
+                "Hardened browser input validation for tab indexes, viewport sizes, ports, geolocation, screenshots, permissions, response limits, cookies, and delays/timeouts.",
+                "Improved recurring cron job retry and model fallback behavior.",
+                "Fixed provider streaming/replay/signature behaviors and media/download handling.",
+                "Improved performance through caching, reduced store serialization, optimized session writes, and leaner metadata paths.",
+                "Bound release, CI, QA, Docker, and validation workflows to prevent hangs and produce better failure proof."
+              ],
+              "contributors": "vincentkoc, nxmxbbd, and 43 other contributors"
+            },
+            "download_links": [
+              {
+                "name": "npm package",
+                "url": "https://www.npmjs.com/package/openclaw/v/2026.5.28"
+              },
+              {
+                "name": "registry tarball",
+                "url": "https://registry.npmjs.org/openclaw/-/openclaw-2026.5.28.tgz",
+                "integrity": "sha512-p7jGN9wzCrqEvHNI6Y7+eh6DWoYDzJ1iQGKTm8xqQ2uQ9/2mY1CCf87WoZeb0+m3eHKSGchlI3tN33fE1lMtEA=="
+              },
+              {
+                "name": "macOS zip",
+                "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.zip",
+                "sha256": "5e67be6126dbc2145cc5ad5dc87a992c54dcfd53778538f2a6161c50220bc6b8",
+                "size": "52.2 MB"
+              },
+              {
+                "name": "macOS dmg",
+                "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dmg",
+                "sha256": "e11f93f313d8b2fffdce71676722e9d6ae742ff6aa9ce9a8bbc93c98a22c6a28",
+                "size": "38.7 MB"
+              },
+              {
+                "name": "macOS dSYM",
+                "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dSYM.zip",
+                "sha256": "5d6e3d9139c4d23f864ea55d5c4b49b95e9e304c8075646e76b72d6ca7fc78b4",
+                "size": "36.8 MB"
+              },
+              {
+                "name": "dependency evidence",
+                "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/openclaw-2026.5.28-dependency-evidence.zip",
+                "sha256": "7d39ecf04a6962f3bca86f3686e38e24aa719bec9d7921f45eb4188859be6dc6",
+                "size": "59 KB"
+              },
+              {
+                "name": "source code zip",
+                "url": "https://github.com/openclaw/openclaw/archive/refs/tags/v2026.5.28.zip"
+              },
+              {
+                "name": "source code tar.gz",
+                "url": "https://github.com/openclaw/openclaw/archive/refs/tags/v2026.5.28.tar.gz"
+              }
+            ],
+            "verification_links": [
+              {
+                "name": "npm preflight",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26692293231"
+              },
+              {
+                "name": "full release validation",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26692292739"
+              },
+              {
+                "name": "release checks",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26692419552"
+              },
+              {
+                "name": "npm Telegram package E2E",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26692496669"
+              },
+              {
+                "name": "plugin npm publish",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26693306143"
+              },
+              {
+                "name": "plugin ClawHub publish",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26693807853"
+              },
+              {
+                "name": "OpenClaw npm publish",
+                "url": "https://github.com/openclaw/openclaw/actions/runs/26693561375"
+              },
+              {
+                "name": "macOS preflight/sign/notarize",
+                "url": "https://github.com/openclaw/releases/actions/runs/26694473893"
+              },
+              {
+                "name": "macOS validation",
+                "url": "https://github.com/openclaw/releases/actions/runs/26695381614"
+              },
+              {
+                "name": "macOS publish/appcast",
+                "url": "https://github.com/openclaw/releases/actions/runs/26695523506"
+              },
+              {
+                "name": "appcast",
+                "url": "https://raw.githubusercontent.com/openclaw/openclaw/main/appcast.xml"
+              }
+            ],
+            "assets_count": 6,
+            "reactions": {
+              "thumbs_up": 20,
+              "heart": 7,
+              "rocket": 6,
+              "total_people_reacted": 25
+            }
+          }
+        },
+        "notes": [
+          "Publish date is not visible in the provided page text.",
+          "GitHub asset links for source code were inferred from the standard tag archive URL pattern because only the asset labels were visible."
+        ]
+      }
+    }
+  ],
+  "final_output": {
+    "task": "Find the latest GitHub release for openclaw/openclaw and extract its release information.",
+    "status": "partial",
+    "result": {
+      "repository": "openclaw/openclaw",
+      "latest_release": {
+        "version": "v2026.5.28",
+        "title": "openclaw 2026.5.28",
+        "author": "github-actions",
+        "publish_date": null,
+        "commit": "e932160",
+        "release_notes": {
+          "highlights": [
+            "Improves Agent and Codex runtime recovery, including workspace separation, hook context isolation, lock cleanup, and resilience around app-server/helper failures.",
+            "Strengthens channel delivery and session identity across plugin hooks, Matrix, iMessage, Slack, Discord, WhatsApp, Telegram, Microsoft Teams, and other messaging integrations.",
+            "Refreshes mobile and chat surfaces, including iOS Pro UI, hosted push relay, realtime Talk playback, Gateway chat transport, onboarding, permissions, reconnects, and session picker behavior.",
+            "Hardens browser, channel, automation, CLI, auth, config parsing, network, and input validation paths.",
+            "Expands provider, media, and document support, including Claude Opus 4.8, Fal Krea image schemas, NVIDIA featured models, MiniMax streaming music, encrypted PDF extraction, voice catalogs, GitHub Copilot agent runtime, and Codex Supervisor plugin support.",
+            "Improves plugin and Gateway performance through reduced repeated work and better caching.",
+            "Improves release, QA, CI, E2E, and cross-OS validation reliability by bounding logs, artifacts, harnesses, and waits."
+          ],
+          "contributors": "vincentkoc, nxmxbbd, and 43 other contributors"
+        },
+        "download_links": [
+          {
+            "name": "npm package",
+            "url": "https://www.npmjs.com/package/openclaw/v/2026.5.28"
+          },
+          {
+            "name": "registry tarball",
+            "url": "https://registry.npmjs.org/openclaw/-/openclaw-2026.5.28.tgz",
+            "integrity": "sha512-p7jGN9wzCrqEvHNI6Y7+eh6DWoYDzJ1iQGKTm8xqQ2uQ9/2mY1CCf87WoZeb0+m3eHKSGchlI3tN33fE1lMtEA=="
+          },
+          {
+            "name": "macOS zip",
+            "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.zip",
+            "sha256": "5e67be6126dbc2145cc5ad5dc87a992c54dcfd53778538f2a6161c50220bc6b8",
+            "size": "52.2 MB"
+          },
+          {
+            "name": "macOS dmg",
+            "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dmg",
+            "sha256": "e11f93f313d8b2fffdce71676722e9d6ae742ff6aa9ce9a8bbc93c98a22c6a28",
+            "size": "38.7 MB"
+          },
+          {
+            "name": "macOS dSYM",
+            "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/OpenClaw-2026.5.28.dSYM.zip",
+            "sha256": "5d6e3d9139c4d23f864ea55d5c4b49b95e9e304c8075646e76b72d6ca7fc78b4",
+            "size": "36.8 MB"
+          },
+          {
+            "name": "dependency evidence",
+            "url": "https://github.com/openclaw/openclaw/releases/download/v2026.5.28/openclaw-2026.5.28-dependency-evidence.zip",
+            "sha256": "7d39ecf04a6962f3bca86f3686e38e24aa719bec9d7921f45eb4188859be6dc6",
+            "size": "59 KB"
+          },
+          {
+            "name": "source code zip",
+            "url": "https://github.com/openclaw/openclaw/archive/refs/tags/v2026.5.28.zip"
+          },
+          {
+            "name": "source code tar.gz",
+            "url": "https://github.com/openclaw/openclaw/archive/refs/tags/v2026.5.28.tar.gz"
+          }
+        ]
+      }
+    },
+    "limitations": [
+      "The exact publish date was not visible in the extracted page text, so publish_date is null.",
+      "Release notes are summarized rather than copied in full."
+    ]
+  }
+}
